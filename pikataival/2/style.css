@@ -1,0 +1,82 @@
+body {
+    font-family: "Arial";
+    color: #333333;
+
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+}
+
+.form__fieldwrap {
+    margin-bottom: 40px;
+}
+
+.form__fieldwrap:last-child {
+    margin-bottom: 0;
+}
+
+.form__input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #4a4a4a;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    border-radius: 0;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: inherit;
+    outline: none;
+}
+
+.form__input:focus {
+    outline: 3px solid #000000;
+}
+
+.inline {
+    display: inline-block;
+    width: 47%;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+}
+
+.form__fieldset {
+    margin-bottom: 30px;
+    border: 1px dotted black;
+}
+
+.button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+}
+
+input[type="radio"]:checked {
+    background-color: gray;
+}
+
+input[type="radio"] {
+    background-color: gray;
+}
+
+.radio-label {
+    background-color: gray;
+    padding: 5px;
+}
+
+.form__fieldwrap--radio {
+    display: inline-block;
+    max-width: 23%;
+    margin-left: 25%;
+    margin-right: 25%;
+}

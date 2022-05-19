@@ -1,0 +1,90 @@
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    height: 700px;
+    width: 100%;
+    background-image: url(../media/hero.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -60px;
+    border-bottom: solid 1px var(--secondary-font-color);
+}
+.hero p {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.hero-title, #read-more {
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    max-width: var(--width);
+}
+.hero-title {
+    font-size: 64px;
+    padding-top: 200px;
+}
+#read-more {
+    cursor: pointer;
+    border-radius: 20px;
+    padding-right: 0;
+    padding-left: 0;
+}
+#read-more:hover {
+    text-decoration: underline;
+}
+#start-order {
+    display: block;
+    text-decoration: none;
+    font-size: 56px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: var(--main-font-color);
+    color: var(--secondary-bg-color);
+    border: solid var(--secondary-font-color) 1px;
+    text-align: center;
+    padding: 25px;
+    max-width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    cursor: pointer;
+    box-shadow: 0 10px 2px 2px;
+}
+#start-order:hover {
+    animation-name: hoverEffect-start;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes hoverEffect-start {
+    0% {background-color: var(--main-font-color); color: var(--secondary-bg-color); border-color: var(--secondary-font-color);}
+    50% {background-color: var(--secondary-font-color); color: var(--main-bg-color); border-color: var(--main-font-color);}
+    100% {background-color: var(--main-font-color); color: var(--secondary-bg-color); border-color: var(--secondary-font-color);}
+}
+@media (max-width: 1300px) {
+    #start-order {
+        max-width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .hero-title, #read-more {
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
+    }
+}
+@media (max-width: 540px) {
+    .hero-title {
+        font-size: 42px;       
+    }
+    .hero p {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .hero {
+        margin-bottom: 0;
+    }
+}
